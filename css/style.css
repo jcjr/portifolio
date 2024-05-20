@@ -13,15 +13,15 @@ body {
 }
 
 .foto {
-   max-width: 15%;
-   height: auto;
+   width: 164px;
+   height: 207px;
    border-radius: 20px;
    border-style: solid;
 }
 
 .fundo {
-   width: 810px;
-   height: 190px;
+   width: 790px;
+   height: 207px;
 }
 
 .container-habilidades {
