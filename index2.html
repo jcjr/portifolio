@@ -26,18 +26,99 @@
    </head>
 
    <body>
+      <!-- Menu principal -->
       <div class="container">
-         <header class="d-flex justify-content-center py-3 border-bottom">
-            <ul class="nav nav-pills">
-               <li class="nav-item"><a href="#" class="nav-link" aria-current="page">Home</a></li>
-               <li class="nav-item"><a href="#" class="nav-link">Formação</a></li>
-               <li class="nav-item"><a href="#" class="nav-link">Conhecimentos</a></li>
-               <li class="nav-item"><a href="#" class="nav-link">Certificados</a></li>
-               <li class="nav-item"><a href="#" class="nav-link">Habilidades</a></li>
-               <li class="nav-item"><a href="#" class="nav-link">Redes Sociais</a></li>
-               <li class="nav-item"><a href="#" class="nav-link">Sobre</a></li>
-            </ul>
-         </header>
+         <nav class="navbar navbar-expand-lg navbar-light" style="height: 80px">
+            <div class="container">
+               <a class="navbar-brand" href="#"><img src="./img/jc_logo.png" alt="" /></a>
+               <button
+                  class="navbar-toggler"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#navbarSupportedContent"
+                  aria-controls="navbarSupportedContent"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation">
+                  <!--<span class="navbar-toggler-icon"></span>-->
+               </button>
+               <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                     <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#"><strong>Home</strong></a>
+                     </li>
+
+                     <li class="nav-item dropdown">
+                        <a
+                           class="nav-link dropdown-toggle"
+                           href="#"
+                           role="button"
+                           data-bs-toggle="dropdown"
+                           aria-expanded="false">
+                           Conhecimentos
+                        </a>
+                        <ul class="dropdown-menu">
+                           <li><a class="dropdown-item" href="#">Formação</a></li>
+                           <li><a class="dropdown-item" href="#">Conhecimentos</a></li>
+                           <li><a class="dropdown-item" href="#">Certificados</a></li>
+                           <li><a class="dropdown-item" href="#">Habilidades</a></li>
+                        </ul>
+                     </li>
+                     <li class="nav-item dropdown">
+                        <a
+                           class="nav-link dropdown-toggle"
+                           href="#"
+                           role="button"
+                           data-bs-toggle="dropdown"
+                           aria-expanded="false">
+                           Redes Sociais
+                        </a>
+                        <ul class="dropdown-menu">
+                           <li><a class="dropdown-item" href="#">Facebook</a></li>
+                           <li><a class="dropdown-item" href="#">Instagram</a></li>
+                           <li><a class="dropdown-item" href="#">LinkedIn</a></li>
+                           <li><a class="dropdown-item" href="#">Github</a></li>
+                        </ul>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="#">Sobre</a>
+                     </li>
+                  </ul>
+                  <!-- Button - Fale conosco -->
+                  <div class="d-flex">
+                     <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#faleconosco"
+                        >Fale conosco</a
+                     >
+                  </div>
+               </div>
+            </div>
+         </nav>
+      </div>
+
+      <!-- Modal - Fale conosco -->
+      <div class="modal fade" id="faleconosco" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+         <div class="modal-dialog">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Contato</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+               </div>
+               <div class="modal-body">
+                  <form action="#" method="post">
+                     <input type="text" id="nome" placeholder="Nome" class="form-control mt-2" />
+
+                     <input type="email" id="email" placeholder="Email" class="form-control mt-2" />
+
+                     <input type="text" id="assunto" placeholder="Assunto" class="form-control mt-2" />
+
+                     <textarea id="mensagem" placeholder="Digite sua mensagem" class="form-control mt-2"></textarea>
+                  </form>
+               </div>
+               <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                  <button type="button" class="btn btn-primary">Enviar</button>
+               </div>
+            </div>
+         </div>
       </div>
 
       <!-- Optional JavaScript -->
